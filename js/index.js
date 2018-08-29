@@ -52,3 +52,12 @@ let navItem = document.querySelectorAll("nav a");
 for (i = 1; 1 < navItem.length; i++) {
   navItem[i - 1].innerHTML = siteContent["nav"][`nav-item-${i}`];
 }
+
+let ctaText = document.querySelector(".cta-text h1");
+ctaText.innerText = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.innerHTML = siteContent["cta"]["button"];
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
