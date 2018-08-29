@@ -50,10 +50,11 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 let navItem = document.querySelectorAll("nav a");
 
 //for loop stops won't ;et the rest of the JS run
-
+/*
 for (i = 1; 1 < navItem.length; i++) {
   navItem[i - 1].innerHTML = siteContent["nav"][`nav-item-${i}`];
 }
+*/
 
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.innerText = siteContent["cta"]["h1"];
@@ -63,3 +64,14 @@ ctaButton.innerHTML = siteContent["cta"]["button"];
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let topCHeader = document.querySelectorAll(".top-content h4");
+topCHeader[0].innerHTML = siteContent["main-content"]["features-h4"];
+topCHeader[1].innerHTML = siteContent["main-content"]["about-h4"];
+
+let topCText = document.querySelectorAll(".top-content p");
+topCText[0].innerHTML = siteContent["main-content"]["features-content"];
+topCText[1].innerHTML = siteContent["main-content"]["about-content"];
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
