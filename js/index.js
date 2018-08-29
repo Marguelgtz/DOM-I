@@ -49,6 +49,8 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 let navItem = document.querySelectorAll("nav a");
 
+//for loop stops won't ;et the rest of the JS run
+
 for (i = 1; 1 < navItem.length; i++) {
   navItem[i - 1].innerHTML = siteContent["nav"][`nav-item-${i}`];
 }
