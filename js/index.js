@@ -93,3 +93,6 @@ let contactInfo = document.querySelectorAll(".contact p");
 contactInfo[0].innerHTML = siteContent["contact"]["address"];
 contactInfo[1].innerHTML = siteContent["contact"]["phone"];
 contactInfo[2].innerHTML = siteContent["contact"]["email"];
+
+let footer = document.querySelector("footer p");
+footer.innerHTML = siteContent["footer"]["copyright"];
