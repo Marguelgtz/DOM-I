@@ -85,3 +85,11 @@ let bottomCText = document.querySelectorAll(".bottom-content p");
 bottomCText[0].innerHTML = siteContent["main-content"]["services-content"];
 bottomCText[1].innerHTML = siteContent["main-content"]["product-content"];
 bottomCText[2].innerHTML = siteContent["main-content"]["vision-content"];
+
+let contactHeader = document.querySelector(".contact h4");
+contactHeader.innerHTML = siteContent["contact"]["contact-h4"];
+
+let contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].innerHTML = siteContent["contact"]["address"];
+contactInfo[1].innerHTML = siteContent["contact"]["phone"];
+contactInfo[2].innerHTML = siteContent["contact"]["email"];
