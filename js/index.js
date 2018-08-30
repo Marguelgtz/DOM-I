@@ -49,12 +49,12 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 let navItem = document.querySelectorAll("nav a");
 
-//for loop stops won't ;et the rest of the JS run
-/*
-for (i = 1; 1 < navItem.length; i++) {
+//for loop won't let the rest of the JS run
+
+for (let i = 1; i < navItem.length; i++) {
   navItem[i - 1].innerHTML = siteContent["nav"][`nav-item-${i}`];
+  navItem[i - 1].style.color = "green";
 }
-*/
 
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.innerText = siteContent["cta"]["h1"];
