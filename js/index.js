@@ -56,6 +56,17 @@ for (let i = 1; i < navItem.length; i++) {
   navItem[i - 1].style.color = "green";
 }
 
+let navLink = document.getElementsByTagName("nav")[0];
+let createNode = addNav => {
+  let newNavItem = document.createElement("a");
+  newNavItem.innerHTML = addNav;
+  newNavItem.style.color = "green";
+  return newNavItem;
+};
+
+navLink.appendChild(createNode("Extra 1"));
+navLink.appendChild(createNode("Extra 2"));
+
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.innerText = siteContent["cta"]["h1"];
 
